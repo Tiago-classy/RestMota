@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Games Showcase</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: white;
+    }
+    .parallax {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+    }
+    .parallax__body {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .parallax__title {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+    .parallax__link, .scroll-arrow {
+      color: #FFD700;
+      text-decoration: none;
+      font-size: 1.2em;
+      margin-top: 10px;
+      display: inline-block;
+    }
+    .parallax__link:hover, .scroll-arrow:hover {
+      text-decoration: underline;
+    }
+    .scroll-arrow {
+      margin-top: 20px;
+      font-size: 1em;
+    }
+  </style>
+</head>
+<body>
+  <div id="skrollr-body">
+    <!-- Section 1: Borderlands 3 -->
+    <section id="game1" class="parallax js-parallax" style="background-image: url('https://images-eds-ssl.xboxlive.com/image?url=8Oaj9Ryq1G1_p3lLnXlsaZgGzAie6Mnu24_PawYuDYIoH77pJ.X5Z.MqQPibUVTc9FvITMUFGGX3DIrw0bw20X2_WaD4TdJuIx24Tf.2ZqVK4ptz_EjJj8r16deDj3f281PqvlMlYgjnVzkZNYr8wN3HgRcCQAyjsnAaNp295qNPbIqjRkOuVqD6bLCN8V44pvTQPGaH8nd7EjsqxpevdnDLy9bMKl_ebj0vCUXwhVs-&h=720&w=1280&format=jpg');">
+      <div class="parallax__body">
+        <h2 class="parallax__title">Borderlands 3</h2>
+        <p>Enter the chaotic world of Pandora in <strong>Borderlands 3</strong>, a first-person shooter RPG packed with explosive action, quirky characters, and an outrageous arsenal of weapons. Join forces with other Vault Hunters to defeat the Calypso Twins and save the galaxy.</p>
+        <a href="https://borderlands.com" target="_blank" class="parallax__link">Learn more about Borderlands 3</a>
+        <a href="#game2" class="scroll-arrow">Next Game</a>
+      </div>
+    </section>
+
+    <!-- Section 2: Overwatch -->
+    <section id="game2" class="parallax js-parallax" style="background-image: url('https://www.the-arcade.ie/wp-content/uploads/2017/06/overwatch-game-wallpaper-reinhardt-tracer-winston-mercy-3840x2160.jpg');">
+      <div class="parallax__body">
+        <h2 class="parallax__title">Overwatch</h2>
+        <p>Step into the world of <strong>Overwatch</strong>, a team-based multiplayer FPS where heroes with unique abilities battle for supremacy. Choose your role—Tank, Damage, or Support—and work together to secure victory in futuristic arenas across the globe.</p>
+        <a href="https://playoverwatch.com" target="_blank" class="parallax__link">Discover Overwatch</a>
+        <a href="#game3" class="scroll-arrow">Next Game</a>
+      </div>
+    </section>
+
+    <!-- Section 3: Dota 2 -->
+    <section id="game3" class="parallax js-parallax" style="background-image: url('https://images2.alphacoders.com/474/thumb-1920-474206.jpg');">
+      <div class="parallax__body">
+        <h2 class="parallax__title">Dota 2</h2>
+        <p><strong>Dota 2</strong> is a competitive multiplayer online battle arena (MOBA) where strategy, skill, and teamwork determine victory. Pick your hero from a roster of over 100 unique characters and clash in epic 5v5 battles for dominance of the Ancient.</p>
+        <a href="https://www.dota2.com" target="_blank" class="parallax__link">Explore Dota 2</a>
+        <a href="#game4" class="scroll-arrow">Next Game</a>
+      </div>
+    </section>
+
+    <!-- Section 4: Battlefield V -->
+    <section id="game4" class="parallax js-parallax" style="background-image: url('https://images-eds-ssl.xboxlive.com/image?url=8Oaj9Ryq1G1_p3lLnXlsaZgGzAie6Mnu24_PawYuDYIoH77pJ.X5Z.MqQPibUVTcTwVgFbXVbB5DsNOZBfUumQ70a7qC3vyZLGequ65vIZdUpdHe0bDMp_CX5uYCkUaZHT72cvvd3fZj_Y4QvgvFVvX6QRYzRQWLmxHHCf3kTVue2qBLp20wXpQsu9KCDZ066uEQPOM4N98RMePkGc.gfQGO90NQpHnpiK6pI3t_3AE-&h=1080&w=1920&format=jpg');">
+      <div class="parallax__body">
+        <h2 class="parallax__title">Battlefield V</h2>
+        <p>Experience World War II like never before in <strong>Battlefield V</strong>. This action-packed FPS features dynamic environments, large-scale battles, and a gripping narrative. Engage in the Tides of War to explore iconic battles across the globe.</p>
+        <a href="https://www.ea.com/de-de/games/battlefield/battlefield-5" target="_blank" class="parallax__link">Learn about Battlefield V</a>
+        <a href="#game5" class="scroll-arrow">Next Game</a>
+      </div>
+    </section>
+
+    <!-- Add additional sections here following the same format -->
+
+  </div>
+
+  <!-- Skrollr and Menu Scripts -->
+  <script src="https://cdn.rawgit.com/Prinzhorn/skrollr/master/dist/skrollr.min.js"></script>
+  <script src="https://cdn.rawgit.com/Prinzhorn/skrollr-menu/master/dist/skrollr.menu.min.js"></script>
+</body>
+</html>
